@@ -16,14 +16,16 @@ sap.ui.require([
 				city: "Walldorf",
 				zip: "69190",
 				country: "Germany"
-			}
+			},
+			salesAmount: 12345.6789,
+			currencyCode: "EUR"
 
 		});
 
 		// Assign the model object to the SAPUI5 core
 		sap.ui.getCore().setModel(oModel);
 
-		var oResourceModel = new ResourceModel({
+		var oResourceBundle = new ResourceModel({
 			bundleName: "sap.ui.demo.db.i18n.i18n",
 			supportedLocales: ["", "de"],
 			fallbackLocale: ""
