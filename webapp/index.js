@@ -9,6 +9,7 @@ sap.ui.require([
 
 	// Chain an anonymous function to the SAPUI5 'ready' Promise
 	Core.ready().then(function () {
+
 		var oProductModel = new JSONModel();
 		oProductModel.loadData("./model/Products.json");
 		sap.ui.getCore().setModel(oProductModel, "products");
@@ -24,6 +25,7 @@ sap.ui.require([
 				country: "Germany"
 			},
 			salesAmount: 12345.6789,
+			priceThreshold: 20,
 			currencyCode: "EUR"
 		});
 
